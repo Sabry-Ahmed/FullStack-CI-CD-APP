@@ -1,9 +1,9 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8080/api/data"
-INSERT_API_URL = "http://localhost:8080/api/insert"
-DELETE_API_URL = "http://localhost:8080/api/delete"
+API_URL = "http://127.0.0.1:5000/api/data"
+INSERT_API_URL = "http://backend:5000/api/insert"
+DELETE_API_URL = "http://backend:5000/api/delete"
 
 
 
