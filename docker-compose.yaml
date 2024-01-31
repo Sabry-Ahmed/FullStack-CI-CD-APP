@@ -1,20 +1,31 @@
 version: '3'
+
 services:
   backend:
-    image: 19661974/backend-image
+    image: 19661974/backend
     ports:
-      - "8080:5000"
+      - "5000:5000"
     networks:
       - my_network
+    volumes:
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql 
 
   frontend:
-    image: 19661974/frontend-image
+    image: 19661974/frontend
     ports:
       - "8501:8501"
     depends_on:
       - backend
     networks:
       - my_network
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: thwekqkk
+      POSTGRES_PASSWORD: wo5PkAQTCUFiks0wZ9EvnlrSasp0O1g0
+      POSTGRES_DB: thwekqkk
+    ports:
+      - "5432:5432"
 
 networks:
   my_network:
