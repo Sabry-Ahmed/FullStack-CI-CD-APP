@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    image: 19661974/backend-image
+    ports:
+      - "8080:5000"
+    networks:
+      - my_network
+
+  frontend:
+    image: 19661974/frontend-image
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    networks:
+      - my_network
+
+networks:
+  my_network:
