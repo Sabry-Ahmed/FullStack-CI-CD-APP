@@ -32,5 +32,5 @@ jobs:
       run:  cd Backend
     
     - name: run tests
-      run:  pytest 
+      run:  pytest test_app.py
          
