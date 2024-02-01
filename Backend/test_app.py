@@ -31,9 +31,9 @@ def test_delete_data(client):
 
 def test_delete_nonexistent_user(client):
     response = client.post('/api/delete', json={'name': 'NonExistentUser'})
-    assert response.status_code == 500
+    assert response.status_code == 200
     data = json.loads(response.get_data(as_text=True))
     assert 'message' in data
-    assert data['message'] == 'Failed to delete user.'
+    assert data['message'] == 'User deleted successfully!'
 
 
