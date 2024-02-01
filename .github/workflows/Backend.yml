@@ -31,7 +31,7 @@ jobs:
     - name: change 
       run:  cd Backend
     - name: Print directory contents
-      run: ls -R
+      run: ls
     - name: run tests
       run:  pytest test_app.py
         
