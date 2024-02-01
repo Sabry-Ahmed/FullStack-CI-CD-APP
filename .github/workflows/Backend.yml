@@ -11,7 +11,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -26,17 +25,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
         pip install --upgrade -r Backend/requirements.txt
-
-    - name: Print directory contents
-      run: ls
-
     - name: change 
       run:  cd Backend
       
-    - name: Print directory contents
-      run: ls
-
-      
     - name: run tests
-      run:  pytest test_app.py
+      run:  pytest Backend/test_app.py 
         
