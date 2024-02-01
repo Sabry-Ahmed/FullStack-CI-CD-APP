@@ -14,4 +14,26 @@ def test_get_data(client):
     assert 'data' in data
     assert isinstance(data['data'], list)
 
+def test_insert_data(client):
+    response = client.post('/api/insert', json={'name': 'TestUser'})
+    assert response.status_code == 200
+    data = json.loads(response.get_data(as_text=True))
+    assert 'message' in data
+    assert data['message'] == 'User inserted successfully!'
+
+def test_delete_data(client):
+    # Assuming there's a user named 'TestUser' in the database
+    response = client.post('/api/delete', json={'name': 'TestUser'})
+    assert response.status_code == 200
+    data = json.loads(response.get_data(as_text=True))
+    assert 'message' in data
+    assert data['message'] == 'User deleted successfully!'
+
+def test_delete_nonexistent_user(client):
+    response = client.post('/api/delete', json={'name': 'NonExistentUser'})
+    assert response.status_code == 200
+    data = json.loads(response.get_data(as_text=True))
+    assert 'message' in data
+    assert data['message'] == 'User deleted successfully!'
+
 
