@@ -4,9 +4,7 @@ services:
   backend:
     image: 19661974/backend
     ports:
-      - "5000:5000"
-    networks:
-      - my_network
+      - "5001:5001"
     volumes:
       - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql 
 
@@ -16,8 +14,7 @@ services:
       - "8501:8501"
     depends_on:
       - backend
-    networks:
-      - my_network
+
   db:
     image: postgres:latest
     environment:
@@ -27,5 +24,4 @@ services:
     ports:
       - "5432:5432"
 
-networks:
-  my_network:
+
