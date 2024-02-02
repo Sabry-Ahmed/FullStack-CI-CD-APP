@@ -48,5 +48,5 @@ jobs:
       run: curl http://localhost:$PORT
 
     - name: Kill the app
-      run: pkill -f "python app.py" 
+      run: pkill -f "python Backend/app.py" 
         
