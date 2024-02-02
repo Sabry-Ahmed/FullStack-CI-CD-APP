@@ -60,7 +60,7 @@ Suivez ces étapes pour construire et exécuter le projet :
    docker-compose up
    ```
    
-##Capture d'écran du Build Docker-Compose
+## Capture d'écran du Build Docker-Compose
 ![Build](/test.png "Build")
 
 ## Démo du Projet
