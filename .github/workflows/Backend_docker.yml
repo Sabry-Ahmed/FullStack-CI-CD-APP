@@ -25,4 +25,4 @@ jobs:
 
 
     - name: Push the Docker image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest
+      run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest 
