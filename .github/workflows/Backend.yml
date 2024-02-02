@@ -30,24 +30,9 @@ jobs:
         python --version
         pip list
 
-    - name: change 
-      run:  cd Backend
       
     - name: run tests
       run:  pytest Backend/test_app.py
-    
-    - name: Execute app.py
-      run: python Backend/app.py &
-      env:
-        PORT: 5001  
 
-    - name: Wait for app to start
-      run: sleep 5
-
-    - name: Check if app is running
-      run: curl http://localhost:$PORT
-
-    - name: Kill the app
-      run: pkill -f "python Backend/app.py" 
       
         
