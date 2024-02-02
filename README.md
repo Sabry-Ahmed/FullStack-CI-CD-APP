@@ -10,12 +10,6 @@ Ce projet FullStack CI/CD est une application simple comprenant un backend et un
 
 
 
-![ScreenRecording2024-02-01at22 34 20-ezgif com-optimize](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/assets/67513897/aef3339c-9d6c-4292-ba58-99519b6269a2)
-
-
-
-![Build](/test.png "Build")
-
 ## Structure du Projet
 
 ### Backend
@@ -65,9 +59,15 @@ Suivez ces étapes pour construire et exécuter le projet :
    ```bash
    docker-compose up
    ```
+   
+##Capture d'écran du Build Docker-Compose
+![Build](/test.png "Build")
 
-5. Ouvrez votre navigateur et accédez à [http://0.0.0.0:8501](http://0.0.0.0:8501) pour voir l'interface utilisateur du frontend.
+## Démo du Projet
+![ScreenRecording2024-02-01at22 34 20-ezgif com-optimize](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/assets/67513897/aef3339c-9d6c-4292-ba58-99519b6269a2)
 
+5. Ouvrez votre navigateur et accédez à [http://localhost:5001](http://localhost:5001) pour voir l'API.
+6. Ouvrez votre navigateur et accédez à [http://0.0.0.0:8501](http://0.0.0.0:8501) pour voir l'interface utilisateur du frontend.
 L'application est maintenant opérationnelle, avec le backend exposé sur le port 5001 et le frontend sur le port 8501.
 
 ## Endpoints du Backend
