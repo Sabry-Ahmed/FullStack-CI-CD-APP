@@ -18,7 +18,6 @@ Le dossier `Backend` contient le code du backend de l'application. Voici une br�
 
 - **Dockerfile:** Le fichier Docker pour construire l'image du backend.
 - **app.py:** Le code principal du backend avec des méthodes pour gérer les requêtes.
-- **init.sql:** Un script SQL d'initialisation pour configurer la base de données.
 - **requirements.txt:** Les dépendances Python du backend.
 - **test_app.py:** Des tests unitaires pour le backend.
 
@@ -29,7 +28,16 @@ Le dossier `Frontend` contient le code du frontend de l'application. Voici une b
 - **Dockerfile:** Le fichier Docker pour construire l'image du frontend.
 - **streamlit_app.py:** Le code principal du frontend basé sur Streamlit.
 - **requirements.txt:** Les dépendances Python du frontend.
-- **test_streamlit_app.py:** Des tests unitaires pour le frontend.
+
+
+### Database
+
+Voici une brève description des fichiers relatifs à la base de données :
+
+- **docker-compose.yaml:** Le fichier Docker Compose pour configurer et déployer la base de données PostgreSQL.
+
+- **db_params.py:** Les paramètres de connexion à la base de données utilisés dans le code de l'application.
+
 
 ### docker-compose.yaml
 
