@@ -49,4 +49,5 @@ jobs:
 
     - name: Kill the app
       run: pkill -f "python Backend/app.py" 
+      
         
