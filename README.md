@@ -8,6 +8,13 @@ Ce projet FullStack CI/CD est une application simple comprenant un backend et un
 [![Docker Build Frontend Image](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Build_frontend_image.yml/badge.svg)](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Build_frontend_image.yml)
 [![Frontend Testing](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Front_test.yml/badge.svg)](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Front_test.yml)
 
+
+
+![image](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/assets/67513897/be3528ee-00c8-45c9-8b15-6af706c0a725)
+
+
+
+
 ## Structure du Projet
 
 ### Backend
