@@ -1,10 +1,11 @@
+# Define the workflow name and specify when it should be triggered (on push to the main branch)
 name: Docker Build Backend Image
 
 on:
   push:
     branches:
       - main
-
+# Define the jobs to be executed
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,12 +18,13 @@ jobs:
     - name: Print directory contents
       run: ls -R
 
-
+     # Build the Docker image
     - name: Build the Docker image
       run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest ./Backend
+      # Login to Docker Hub 
     - name: Login to Docker Hub
       run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_HUB_USERNAME }}" --password-stdin
 
-
+    # Push the Docker image to Docker Hub
     - name: Push the Docker image to Docker Hub
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest 
