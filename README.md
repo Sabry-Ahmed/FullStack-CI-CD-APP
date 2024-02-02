@@ -12,9 +12,9 @@ Ce projet FullStack CI/CD est une application simple comprenant un backend et un
 
 ![ScreenRecording2024-02-01at22 34 20-ezgif com-optimize](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/assets/67513897/aef3339c-9d6c-4292-ba58-99519b6269a2)
 
-![Uploading Screenshot 2024-02-01 at 22.30.27.png…]()
 
 
+![Build](/test.png "Build")
 
 ## Structure du Projet
 
