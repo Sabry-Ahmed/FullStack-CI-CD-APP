@@ -10,7 +10,7 @@ Ce projet FullStack CI/CD est une application simple comprenant un backend et un
 
 
 ### architecture diagram
-![Build](/diagram.png "Build")
+![Build](/diagram.png "diagram")
 
 
 ## Structure du Projet
