@@ -9,7 +9,7 @@ Ce projet FullStack CI/CD est une application simple comprenant un backend et un
 [![Frontend Testing](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Front_test.yml/badge.svg)](https://github.com/Sabry-Ahmed/FullStack-CI-CD-APP/actions/workflows/Front_test.yml)
 
 
-### architecture diagram
+### Architecture diagram
 ![Build](/diagram.png "diagram")
 
 
