@@ -1,5 +1,5 @@
 
-# Projet FullStack CI/CD
+# Projet FullStack CI/CD   
 
 Ce projet FullStack CI/CD est une application simple comprenant un backend et un frontend. Il utilise Docker et Docker Compose pour faciliter le déploiement et la gestion des dépendances.
 
