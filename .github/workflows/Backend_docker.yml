@@ -16,7 +16,10 @@ jobs:
     
     
     - name: Print directory contents
-      run: ls -R
+      run: echo "${{ secrets.DOCKER_HUB_PASSWORD }}" 
+      
+    - name: Print directory contents
+      run: echo "${{ secrets.DOCKER_HUB_USERNAME }}" 
 
      # Build the Docker image
     - name: Build the Docker image
